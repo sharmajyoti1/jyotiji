@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HappyToppings</title> 
+        <style type="text/css" >
+        
+            *{
+                margin: 0; padding: 0; box-sizing: border-box; 
+            }
+            header{
+                width: 100%; height: 100vh;
+                background-image: url(https://images.squarespace-cdn.com/content/v1/58e970e8893fc0148f86dffb/1612858400376-FBUKD45T1HMYRF3NJSYQ/allPastries-%28bigger-background%29.png?format=2500w);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            nav{
+                width: 100%; height: 15vh;
+                background-color:darkslategrey;
+                color: white; display: flex; justify-content: space-between;
+                align-items: center;
+                color: black;
+                cursor:pointer;
+            }
+            .logo{
+                width: 25%;
+                text-align: center;
+                
+                
+            }
+            .menu{
+                width: 40%;
+                display: flex; justify-content: space-around;
+            }
+            .menu a {
+                width: 25%;
+                text-decoration: dotted; color:whitesmoke;
+                font-weight: bold;
+            }
+            main{
+                width: 100%;
+                height: 85%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: white;
+                transition: all ease;
+               
+            }
+            section h1{
+                margin: 30px 20px ;
+                font-size: 55px;
+                font-weight: 700;
+                text-shadow: 2px 1px 5px black;
+              
+
+            }
+            section h3{
+                font: size 35px; font-weight: 300; letter-spacing: 3px;
+                text-shadow: 1px 1px 2px black;
+            }
+            section h1{
+               
+                font-size: 55px;
+                font-weight: 700;
+                text-shadow: 2px 1px 5px black;
+                
+            }
+            section p {
+                font-size: 25px;
+                word-spacing: 3px;
+                margin-bottom: 25px;
+                text-shadow: 1px 1px 1px black;
+
+            }
+            section a{
+                padding: 12px 30px;
+                border-radius: 4px;
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 500;
+            }
+            .btnone{ background-color: white;
+                color:black;
+                cursor: pointer;
+
+            }
+            .btntwo{
+                background-color: white;
+                color: black;
+                cursor: pointer;
+            } 
+            
+            a{
+                font-size: x-large;
+                text-decoration: none;
+                color:white;
+            }
+            .logo{
+                width: 80px;
+                margin-bottom: 30px;
+            }
+
+            
+            img{
+                border: 3px solid black;
+                border-radius: 10px;
+                box-shadow: 7px 12px grey;
+                padding: auto;
+            }
+           
+                
+            body{
+                min-height: 100vh;
+                overflow-x: hidden;
+                background-image: url(https://image.freepik.com/free-photo/empty-wood-table-top-blur-background-bakery-shop_8753-41.jpg);
+                background-size: cover;
+            }
+            h6{
+                font-size: 65px;
+                background-color:lightpink;
+                border-radius: 4px;
+                
+            }
+            h8{
+                font-size: 65px;
+                background-color: lightpink;
+                border-radius: 4px;
+            }
+            .logo1{
+                position: absolute;
+                height:100px;
+                width: 100px;
+                top: -50px;
+                left: 150px;
+                
+            }
+            .logo{
+                width: 80px;
+                margin-bottom: 30px;
+            }
+        .login{
+                position: relative;
+                width: 400px;
+                height: 500px;
+                background-color: rgba(0, 0, 0, 0.726);
+                border-radius: 20px 0px 20px 0px;
+                top: 120px;
+                left: 520px;
+            
+
+        }
+        
+        label{
+            color: aliceblue;
+            font-size: 20px;
+        }
+
+        input[type='text'],input[type='password']{
+        position: absolute;
+        border: none;
+        border-bottom: 2px solid wheat;
+        background: transparent;
+        height: 30px;
+        color: wheat;
+        width: 300px;
+        text-align: left;
+
+
+}
+        .inner_login{
+           padding-left: 50px;
+           padding-top: 130px;
+           color:black;
+        }
+    p{  
+        position: relative;
+        font-size: 50px;
+        color: whitesmoke;
+        top: -70px;
+        left: 15px;
+        color: yellow;
+    }
+
+    input[type='submit']{
+        position: absolute;
+        top: 350px;
+        width: 300px;
+        height: 50px;    
+        font-size: 20px;
+        font-weight: bolder;    
+        border-radius: 10px;
+        background: transparent;
+        border-color: yellow;
+        color: white;
+    }
+    input[type='submit']:hover{
+
+        color: black;
+        background-color: yellow;
+        cursor: pointer;
+    }
+    footer{
+                width: 100%;
+                height: 90%;
+                position: absolute;
+                
+                background: transparent;
+                color: white;
+                padding: 100px 0 30px;
+                border-top-left-radius: 125px;
+                font-size: 20px;
+                line-height: 20px;
+                display: inline-block;
+            }
+    .row{
+                width: 60px;
+                margin: 40px;
+                display: inline;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+            .col{
+                flex-basis: 25%;
+                padding: 10px;
+            }
+            .logo{
+                width: 80px;
+                margin-bottom: 30px;
+
+            }
+            .col h4{
+                width: fit-content;
+                margin-bottom: 40px;
+                position: relative;
+                border-bottom: 2px solid black;
+            }
+            .email-id{
+                width: fit-content;
+                border-bottom: 1px solid;
+                margin: 20px 0;
+            }
+            form{
+                padding-bottom: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 2px solid black;
+                margin-bottom: 50px;
+                background: transparent;
+            }
+            form input{
+                width:auto;
+                background:transparent;
+                outline: none;
+                color:white;
+            }
+            form button{
+                background: transparent;
+                border:0px;
+                outline: none;
+                cursor: pointer;
+            }
+           
+            
+
+
+            
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img id="edit">
+                    <img src="C:\Users\Dell\Desktop\JYOTI(BCA)\logo.png" height="100px" width="90px" style: margin="2px";>
+                    <i><h1 class="">HappyTopping's</h1></i></div>
+                
+                <div class="menu">
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">GIFT HAMPERS</a>
+                    <a href="#">CONTACT</a>
+
+                </div>
+                </nav>
+                <main>
+                    <section>
+                        <h3><i>WELCOME  TO</i></h3>
+                        <h1><i>HappyTopping's</i></h1>
+                        <P1>Delicious cakes availabe here </P1>
+                        <a href="#" class="btnone">learn more</a>
+                        <a href="#" class="btntwo">Sign up </a>
+
+                    </section>
+                </main>
+        </header>
+        <section>
+            <h6><i><u>CAKES</u></i></h6>
+            <table>
+                <tr>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZrNkqWFmGaZ3nxvuMu3EEjF3VT5u4XSI7YA&usqp=CAU"height="200px" width="200px" style: margin-top="20px"><br></td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://www.yummycake.co.in/wp-content/uploads/2014/06/Blue-Berry-Cake.jpg" height="200px" width="200px" style: margin-top="20px"><br></td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://www.keep-calm-and-eat-ice-cream.com/wp-content/uploads/2021/10/Chocolate-red-velvet-cake-hero-24.jpg" height="200px" width="200px" style: margin-top="20px"></td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://www.giftsncake.com/image/cache/catalog/flower/fathers%20day/butter-scotch-cake-650x650.jpg" height="200px" width="200px" style: margin-top="20px"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size: x-large;"><b>Hazelnut</b></label><br></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size: x-large;"><b>Blueberry</b> </label><br></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size: x-large;"> <b>Red velvet</b> </label><br></p></td>
+                    <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:x-large;"><b>Butter scotch</b></label><br></td>
+                    </tr><hr><br><br>
+                    <tr>
+                        <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://cdn.shopify.com/s/files/1/0516/2831/0688/products/0I4A5488copy_1000x1000.jpg?v=1641169436" height="200px" width="200px" style: margin-top="20px"> <br></td>
+                        <td> &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://imgcdn.floweraura.com/DSC_7909.jpg" height="200px" width="200px" style: margin-top="20px"><br></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://cdn.shopify.com/s/files/1/0639/3584/0515/products/BelgianChocolateCakeResize.jpg?v=1659096694" height="200px" width="200px" style: margin-top="20px"><br></td>
+                        <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://i.pinimg.com/originals/ae/8b/fa/ae8bfa59fb171ba016b32bd75e90564a.jpg" height="200px" width="200px" style:margin-top="20px"></td>
+                        <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://cdn.shopify.com/s/files/1/0067/1226/2708/products/1_56-sw_420x.jpg?v=1610985054" height="200px" width="200px" style: margin-top="20px"><br></td>
+                    </tr>
+                <tr>
+                    <td> &nbsp;&nbsp;&nbsp;<label style="font-size:x-large;"><b>Fruit cake</b></label><br></td>
+                  <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label style="font-size:x-large;"><b>Black forest</b></label><br></td>
+                    <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label style="font-size:x-large;"><b>Mocha</b></label><br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <label style="font-size:x-large;"><b>Marvel</b></label><br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <label style="font-size:x-large;"><b>Chocolate</b></label><br></td>
+                </tr>
+                <tr>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://media.bakingo.com/sq-pineapple-cake0022pifr-AA_0.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXO47F5k29EfF8iTsWcY7vdNZ5zgX8TbQ4Gw&usqp=CAU"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://lilluna.com/wp-content/uploads/2020/04/vanilla-cake-resize-15.jpg"height="200px" width="200px" style: margin-top="200px"> <br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://www.piesandtacos.com/wp-content/uploads/2020/08/Dulce-de-Leche-Mocha-Cake-4.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                
+                </tr>
+                <tr>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Pineapple</b></label><br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Cherry</b></label><br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>White forest</b></label><br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Chocolate</b></label><br></td>
+                </tr>
+                <tr>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://www.cakexpo.com/wp-content/uploads/2021/12/IMG_20211117_202057_144.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://www.fnp.com/images/pr/l/v20221202175438/blue-roses-designer-cake_1.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://www.fnp.com/images/pr/l/v20221130174909/crunchy-butterscotch-cake_1.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://www.fnp.com/images/pr/l/v20200207155506/black-forest-oreo-cake_1.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://www.fnp.com/images/pr/l/v20200707215235/pink-strawberry-cream-cake_1.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                </tr>
+                <tr>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Truffle</b></label><br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Blue Roses</b></label><br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>crunchy butter scotch</b></label><br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Oreo </b></label><br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Strawberry</b></label><br></td>
+                </tr>
+                <tr>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://i7.fnp.com/images/pr/l/v20190924145405/fresh-fruit-vanilla-cake-half-kg_1.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://i7.fnp.com/images/pr/l/v20200831182550/tempting-caramel-cream-cake-half-kg_1.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt12prodlp/products/p-almond-amaze-dry-cake-400-gms--180164-m.jpg"height="200px" width="200px" style: margin-top="20px"><br>></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://i7.fnp.com/images/pr/l/v20200205193823/kit-kat-cake-half-kg_1.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                </tr>
+                <tr>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Creamy Vanilla</b></label><br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Heavenly Caramel Cream</b></label><br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Classic Almond </b></label><br></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Kit Kat</b></label><br></td>
+                </tr>
+                        </table>
+                        <h8><i><u>GIFT HAMPERS</u></i></h8>
+                        <table>
+                            <tr>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt12prodlp/products/p-choc-o-nuts-deluxe-hamper-122930-2.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://media.bakingo.com/squ-a-box-full-of-love-sweetness-and-taste-hamp2372-A.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://www.bakehoney.com/media/31219/conversions/30960_11-03-2022_16-59-50_name_000000WhatsApp-Image-2021-09-05-at-2.55.00-PM-(1)-banner.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnCr0HksCNOWZKSbUV4YeFhd02HCxZ94NwBg&usqp=CAU"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Choco Nuts</b></label><br></td>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Cookies combo</b></label><br></td>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Mini Chocolates</b></label><br></td>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>All combo</b></label><br></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXs8zJWtiyYyjnOLn7cTmLevVzi-hL_T2nfA&usqp=CAU"height="200px" width="200px" style: margin-top="20px"> <br></td> 
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://m.media-amazon.com/images/I/91mW9LgE0OL._SL1500_.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYazRE37C9CjE4PaBvLk_LeyLZ41Zp3TQLsJV5GeE8EsHAlCfrraArCD0htunD_2ZKPg&usqp=CAU"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://www.angroos.com/wp-content/uploads/2022/02/001-43-scaled.jpg"height="200px" width="200px" style: margin-top="20px"> <br></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Cookies</b></label><br></td>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Choco frame</b></label><br></td>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>Dark choco</b></label><br></td>
+                                <td>&nbsp; &nbsp; &nbsp; &nbsp;<label style="font-size:x-large;"><b>All choco combo</b></label><br></td>
+                            </tr>
+                        </table><br>
+                        <body>
+                            <div class="contain">
+                             <div class="login">
+                                <div class="inner_login">
+                                    <p>Please Login</p>
+                                    <img src="logo.png" class="logo1">
+                            
+                                            <label> Name</label><br>
+                                            <input type="text" ><br>
+                                            <br><br>
+                                            <label>Password </label><br>
+                                            <input type="password" ><br>
+                                            <input type="submit">
+                                            </div>
+                             </div>
+                            </div>
+                            <footer>
+                                <div class="row">
+                                    <div class="col"> <img src="logo.png" class="logo"></div>
+                                    <p1><i>The taste of home-baked goodness</i></p1>
+                                    <div class="col">
+                                      <br>  <h4>ABOUT</h4>
+                                        <p1>SECTOR 14 </p1>
+                                        <p1>near galaxia mall</p1>
+                                        <p1>Gurgoan, Haryana</p1>
+                                        <p1 class="email-id">HappyToppings@gmail.com</p1>
+                                        <h5>+91-0123456789</h5>
+                                    </div>
+                                    <div class="col">
+                                      <br> <h4>PLACE YOUR ORDER NOW</h4>
+                                        <form>
+                                            <input type="text" placeholder="Enter your name"><br> 
+                                            <input type="email" placeholder="Enter your email-id" required><br>
+                                            <input type="number" placeholder="Enter your phone number" required><br>
+                                            <button>SUBMIT</button>
+                                        </form>
+                                    </div>
+                                </div>
+                             </footer>
+                                    
+       
+        
+  </body>         
+</html>
